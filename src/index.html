@@ -6,178 +6,278 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>중간 프로젝트 템플릿</title>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"> -->
   <link rel="stylesheet" href="./index.scss">
 </head>
 
 <body>
-    <div class="root"></div>
-    <!-- 메인 페이지 -->
-    <template id="main-page">
-        <div class="section section1">
-            <header class="header content clearfix">
-              <div class="logo">
-                <img src="../img/logo.png" alt="">
-              </div>
-              <nav class="nav">
-                <ul class="nav-list">
-                  <li>
-                    <a href="#">로그인</a>
-                  </li>
-                  <li>
-                    <a href="#">회원가입</a>
-                  </li>
-                  <li>
-                    <a href="#">장바구니</a>
-                  </li>
-                </ul>
-              </nav>
-              <div class="menu content">
-                <ul class="menu-bar">
-                  <li>
-                    <a href="#">NEW</a>
-                  </li>
-                  <li>
-                    <a href="#">MEN'S</a>
-                  </li>
-                  <li>
-                    <a href="#">WOMEN'S</a>
-                  </li>
-                  <li>
-                    <a href="#">ACCESSORY</a>
-                  </li>
-                </ul>
-                <form class="searchBarForm">
-                  <fieldset>
-                    <legend class="readable-hidden">검색</legend>
-                    <input id="keyword" name="keyword" class="inputTypeText" type="text">
-                    <button>검색</button>
-                  </fieldset>
-                </form>
-              </div>
-            </header>
-          </div>
-          <div class="section section2 clearfix">
-            <div class="card-more content">
-              <a href="#" class="card-box clearfix">
-                <img src="https://source.unsplash.com/random/500x500" alt="">
-                <div class="card-box-text">
-                  <h3>Basic Polo shirt - White</h3>
-                  <p>₩43,000</p>
-                </div>
-              </a>
-              <a href="#" class="card-box clearfix">
-                <img src="https://source.unsplash.com/random/500x500" alt="">
-                <div class="card-box-text">
-                  <h3>Basic Logo T-shirt - White</h3>
-                  <p>₩68,000</p>
-                </div>
-              </a>
-              <a href="#" class="card-box clearfix">
-                <img src="https://source.unsplash.com/random/500x500" alt="">
-                <div class="card-box-text">
-                  <h3>Basic Long sleeve T-shirt</h3>
-                  <p>₩55,000</p>
-                </div>
-              </a>
-              <a href="#" class="card-box clearfix">
-                <img src="https://source.unsplash.com/random/500x500" alt="">
-                <div class="card-box-text">
-                  <h3>Basic Short pants - Navy</h3>
-                  <p>₩38,000</p>
-                </div>
-              </a>
-              <a href="#" class="card-box clearfix">
-                <img src="https://source.unsplash.com/random/500x500" alt="">
-                <div class="card-box-text">
-                  <h3>Pile 6P Cap - Yellow</h3>
-                  <p>₩38,000</p>
-                </div>
-              </a>
-              <a href="#" class="card-box clearfix">
-                <img src="https://source.unsplash.com/random/500x500" alt="">
-                <div class="card-box-text">
-                  <h3>Women's Short Pants - Yellow</h3>
-                  <p>₩48,000</p>
-                </div>
-              </a>
-              <a href="#" class="card-box clearfix">
-                <img src="https://source.unsplash.com/random/500x500" alt="">
-                <div class="card-box-text">
-                  <h3>Women's Short Pants - Yellow</h3>
-                  <p>₩32,000</p>
-                </div>
-              </a>
-              <a href="#" class="card-box clearfix">
-                <img src="https://source.unsplash.com/random/500x500" alt="">
-                <div class="card-box-text">
-                  <h3>Women's Short Pants - Yellow</h3>
-                  <p>₩18,000</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="section section3">
-              <footer class="footer">
-                2018 © JaeHan Jung
-              </footer>
-            </div>
-    </template>
-<!-- 로그인 페이지 -->
-    <template id="login">
-      <div class="section section1">
-        <header class="header content clearfix">
-          <div class="logo">
-            <img src="../img/logo.png" alt="">
-          </div>
-          <nav class="nav">
-            <ul class="nav-list">
-              <li>
-                <a href="#">로그인</a>
-              </li>
-              <li>
-                <a href="#">회원가입</a>
-              </li>
-              <li>
-                <a href="#">장바구니</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="menu content">
-            <ul class="menu-bar">
-              <li>
-                <a href="#">NEW</a>
-              </li>
-              <li>
-                <a href="#">MEN'S</a>
-              </li>
-              <li>
-                <a href="#">WOMEN'S</a>
-              </li>
-              <li>
-                <a href="#">ACCESSORY</a>
-              </li>
-            </ul>
-            <form class="searchBarForm">
-              <fieldset>
-                <legend class="readable-hidden">검색</legend>
-                <input id="keyword" name="keyword" class="inputTypeText" type="text">
-                <button>검색</button>
-              </fieldset>
-            </form>
-          </div>
-        </header>
-      </div>
-      <div class="section section2 clearfix">
-        <div class="login">
-          <h1 class="login__title">LOGIN</h1>
-          <form class="login__form">
-            <input name="username" type="text" class="login__username" placeholder="아이디">
-            <input name="password" type="password" class="login__password" placeholder="패스워드">
-            <button type="submit">LOGIN</button>
+  <div class="root"></div>
+  <!-- 메인 페이지 -->
+  <template id="main-page">
+    <div class="section section1">
+      <header class="header content clearfix">
+        <div class="logo">
+          <img src="../img/logo.png" alt="">
+        </div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li>
+              <a href="#" class="login-page__btn">로그인</a>
+            </li>
+            <li>
+              <a href="#" class="signup-page__btn">회원가입</a>
+            </li>
+            <li>
+              <a href="#">장바구니</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu content">
+          <ul class="menu-bar">
+            <li>
+              <a href="#">NEW</a>
+            </li>
+            <li>
+              <a href="#">MEN'S</a>
+            </li>
+            <li>
+              <a href="#">WOMEN'S</a>
+            </li>
+            <li>
+              <a href="#">ACCESSORY</a>
+            </li>
+          </ul>
+          <form class="searchBarForm">
+            <fieldset>
+              <legend class="readable-hidden">검색</legend>
+              <input id="keyword" name="keyword" class="inputTypeText" type="text">
+              <button>검색</button>
+            </fieldset>
           </form>
         </div>
+      </header>
+    </div>
+    <div class="section section2 clearfix">
+      <div class="card-more content">
+        <a href="#" class="card-box clearfix">
+          <img src="https://source.unsplash.com/random/500x500" alt="">
+          <div class="card-box-text">
+            <h3>Basic Polo shirt - White</h3>
+            <p>₩43,000</p>
+          </div>
+        </a>
+        <a href="#" class="card-box clearfix">
+          <img src="https://source.unsplash.com/random/500x500" alt="">
+          <div class="card-box-text">
+            <h3>Basic Logo T-shirt - White</h3>
+            <p>₩68,000</p>
+          </div>
+        </a>
+        <a href="#" class="card-box clearfix">
+          <img src="https://source.unsplash.com/random/500x500" alt="">
+          <div class="card-box-text">
+            <h3>Basic Long sleeve T-shirt</h3>
+            <p>₩55,000</p>
+          </div>
+        </a>
+        <a href="#" class="card-box clearfix">
+          <img src="https://source.unsplash.com/random/500x500" alt="">
+          <div class="card-box-text">
+            <h3>Basic Short pants - Navy</h3>
+            <p>₩38,000</p>
+          </div>
+        </a>
+        <a href="#" class="card-box clearfix">
+          <img src="https://source.unsplash.com/random/500x500" alt="">
+          <div class="card-box-text">
+            <h3>Pile 6P Cap - Yellow</h3>
+            <p>₩38,000</p>
+          </div>
+        </a>
+        <a href="#" class="card-box clearfix">
+          <img src="https://source.unsplash.com/random/500x500" alt="">
+          <div class="card-box-text">
+            <h3>Women's Short Pants - Yellow</h3>
+            <p>₩48,000</p>
+          </div>
+        </a>
+        <a href="#" class="card-box clearfix">
+          <img src="https://source.unsplash.com/random/500x500" alt="">
+          <div class="card-box-text">
+            <h3>Women's Short Pants - Yellow</h3>
+            <p>₩32,000</p>
+          </div>
+        </a>
+        <a href="#" class="card-box clearfix">
+          <img src="https://source.unsplash.com/random/500x500" alt="">
+          <div class="card-box-text">
+            <h3>Women's Short Pants - Yellow</h3>
+            <p>₩18,000</p>
+          </div>
+        </a>
       </div>
-    </template>
+    </div>
+    <div class="section section3">
+      <footer class="footer">
+        2018 © JaeHan Jung
+      </footer>
+    </div>
+  </template>
+  <!-- 로그인 페이지 -->
+  <template id="login">
+    <div class="section section1">
+      <header class="header content clearfix">
+        <div class="logo">
+          <img src="../img/logo.png" alt="">
+        </div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li>
+              <a href="#">로그인</a>
+            </li>
+            <li>
+              <a href="#">회원가입</a>
+            </li>
+            <li>
+              <a href="#">장바구니</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu content">
+          <ul class="menu-bar">
+            <li>
+              <a href="#">NEW</a>
+            </li>
+            <li>
+              <a href="#">MEN'S</a>
+            </li>
+            <li>
+              <a href="#">WOMEN'S</a>
+            </li>
+            <li>
+              <a href="#">ACCESSORY</a>
+            </li>
+          </ul>
+          <form class="searchBarForm">
+            <fieldset>
+              <legend class="readable-hidden">검색</legend>
+              <input id="keyword" name="keyword" class="inputTypeText" type="text">
+              <button>검색</button>
+            </fieldset>
+          </form>
+        </div>
+      </header>
+    </div>
+    <div class="section section2 clearfix">
+      <div class="login">
+        <h1 class="login__title">LOGIN</h1>
+        <form class="login__form">
+          <input name="username" type="text" class="login__username" placeholder="아이디">
+          <input name="password" type="password" class="login__password" placeholder="패스워드">
+          <button type="submit">LOGIN</button>
+        </form>
+      </div>
+    </div>
+  </template>
+  <!-- 회원가입 페이지 -->
+  <template id="Sign-Up">
+    <div class="section section1">
+      <header class="header content clearfix">
+        <div class="logo">
+          <img src="../img/logo.png" alt="">
+        </div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li>
+              <a href="#">로그인</a>
+            </li>
+            <li>
+              <a href="#">회원가입</a>
+            </li>
+            <li>
+              <a href="#">장바구니</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu content">
+          <ul class="menu-bar">
+            <li>
+              <a href="#">NEW</a>
+            </li>
+            <li>
+              <a href="#">MEN'S</a>
+            </li>
+            <li>
+              <a href="#">WOMEN'S</a>
+            </li>
+            <li>
+              <a href="#">ACCESSORY</a>
+            </li>
+          </ul>
+          <form class="searchBarForm">
+            <fieldset>
+              <legend class="readable-hidden">검색</legend>
+              <input id="keyword" name="keyword" class="inputTypeText" type="text">
+              <button>검색</button>
+            </fieldset>
+          </form>
+        </div>
+      </header>
+    </div>
+    <div class="section section2 clearfix">
+      <table class="Sign-Up__table content" >
+          <tbody>
+              <tr>
+                <th scope="row">아이디
+                </th>
+                <td>
+                  <input id="member_id" name="member_id" class="id_input" placeholder="아이디" type="text">
+                  <span id="idMsg"></span> (영문소문자/숫자, 4~16자)</td>
+              </tr>
+              <tr>
+                <th scope="row">비밀번호
+                </th>
+                <td>
+                  <input id="passwd" name="passwd" maxlength="16" 0="disabled" placeholder="비밀번호" type="password"> (영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 8자~16자)</td>
+              </tr>
+              <tr>
+                <th scope="row">이름
+                </th>
+                <td>
+                  <input id="name" name="name" class="name_input" placeholder="이름" type="text">
+              </tr>
+              <tr>
+                <th scope="row">주소
+                </th>
+                <td>
+                  <input id="address" name="address" class="address_input" placeholder="주소" type="text"> -
+                  <input id="address2" name="address2" class="address_input2" type="text"> 나머지주소 </td>
+              </tr>
+              <tr>
+                <th scope="row">휴대전화
+                </th>
+                <td>
+                  <select id="mobile" name="mobile[]">
+                    <option value="010">010</option>
+                    <option value="011">011</option>
+                    <option value="016">016</option>
+                    <option value="017">017</option>
+                    <option value="018">018</option>
+                    <option value="019">019</option>
+                  </select> -
+                  <input id="mobile2" name="mobile[]" maxlength="4" type="text">-
+                  <input id="mobile3" name="mobile[]" maxlength="4" type="text">
+                </td>
+              </tr>
+            </tbody>
+      </table>
+      <div class="Sign-Up-btn">
+          <button type="submit">회원가입</button>
+          <button type="submit">회원가입 취소</button>
+      </div>
+    </div>
+
+  </template>
 
   <script src="./index.js"></script>
 </body>

@@ -19,17 +19,40 @@ function render(fragment) {
 const templates = {
   mainPage: document.querySelector("#main-page").content,
   login: document.querySelector("#login").content,
+  signup: document.querySelector("#Sign-Up").content
 };
 // 메인페이지
 async function indexPage() {
   const listFragment = document.importNode(templates.mainPage, true);
-
+  listFragment
+    .querySelector(".login-page__btn")
+    .addEventListener("click", e => {
+      loginPage();
+    });
+  listFragment
+    .querySelector(".signup-page__btn")
+    .addEventListener("click", e => {
+      signupPage();
+    });
 
   render(listFragment);
 }
 //로그인페이지
 async function loginPage() {
   const fragment = document.importNode(templates.login, true);
+  fragment.querySelector(".logo").addEventListener("click", e => {
+    indexPage();
+  });
+
+
+  render(fragment);
+}
+//회원가입 페이지
+async function signupPage() {
+  const fragment = document.importNode(templates.signup, true);
+  fragment.querySelector(".logo").addEventListener("click", e => {
+    indexPage();
+  });
 
   render(fragment);
 }

@@ -60,6 +60,9 @@ a {
   margin: 0 auto;
   margin-top: 20px;
 }
+.logo img{
+  cursor: pointer;
+}
 .nav{
   float: right;
   // background-color: yellow;
@@ -141,6 +144,23 @@ fieldset{
   white-space: normal;
   text-align: left;
 }
+
+
+/* section3 영역 */
+
+.section3 {
+  margin-top: 50px;
+  /* height: 100px; */
+  border-top: 1px solid #c5c5c5;
+  background-color: white;
+}
+.footer {
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  font-size: 22px;
+}
+
 /* 여기서부터 로그인 페이지  */
 .login{
   text-align: center;
@@ -166,17 +186,30 @@ fieldset{
   cursor: pointer;
 }
 
-/* section3 영역 */
-
-.section3 {
-  margin-top: 50px;
-  /* height: 100px; */
-  border-top: 1px solid #c5c5c5;
-  background-color: white;
+// 회원가입 페이지
+.Sign-Up__table{
+  margin-top: 30px;
 }
-.footer {
+.Sign-Up__table tr{
+  display: block;
+  margin-top: 15px;
+}
+
+.Sign-Up-btn{
+  margin-top: 25px;
   text-align: center;
-  margin: 0;
-  padding: 20px;
-  font-size: 22px;
+}
+.Sign-Up-btn button{
+  width: 140px;
+  height: 40px;
+  background-color: #181818;
+  border: 0;
+  color: white;
+  font-size: 14px;
+  line-height: 35px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.Sign-Up-btn button:last-child{
+  background-color: #8C8C8C;
 }
