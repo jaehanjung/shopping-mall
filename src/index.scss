@@ -60,23 +60,23 @@ a {
   margin: 0 auto;
   margin-top: 20px;
 }
-.logo img{
+.logo img {
   cursor: pointer;
 }
-.nav{
+.nav {
   float: right;
   // background-color: yellow;
 }
-.nav-list li{
+.nav-list li {
   float: left;
   margin-left: 20px;
   font-size: 15px;
   color: black;
 }
-.nav-list li:hover{
-    display: block;
-    width: 60px;
-    border-bottom: 1px solid #303030;
+.nav-list li:hover {
+  display: block;
+  width: 60px;
+  border-bottom: 1px solid #303030;
 }
 .menu {
   margin-top: 100px;
@@ -91,12 +91,12 @@ a {
 .searchBarForm {
   float: right;
 }
-fieldset{
+fieldset {
   border: 0;
 }
 /* section2 영역 */
 
-.section2{
+.section2 {
   border-top: 1px solid black;
 }
 .card-box {
@@ -108,7 +108,7 @@ fieldset{
   margin-top: 35px;
   overflow: hidden;
   border-radius: 5px;
-  box-shadow: 0 7px 9px rgba(0, 0, 0, .1);
+  box-shadow: 0 7px 9px rgba(0, 0, 0, 0.1);
 }
 .card-box img {
   width: 345px;
@@ -145,7 +145,6 @@ fieldset{
   text-align: left;
 }
 
-
 /* section3 영역 */
 
 .section3 {
@@ -162,22 +161,22 @@ fieldset{
 }
 
 /* 여기서부터 로그인 페이지  */
-.login{
+.login {
   text-align: center;
 }
-.login__username{
+.login__username {
   border: 1px solid #ddd;
   color: #333;
   font-size: 14px;
   line-height: 35px;
 }
-.login__password{
+.login__password {
   border: 1px solid #ddd;
   color: #333;
   font-size: 14px;
   line-height: 35px;
 }
-.login__form button{
+.login__form button {
   background-color: #181818;
   border: 0;
   color: white;
@@ -187,19 +186,19 @@ fieldset{
 }
 
 // 회원가입 페이지
-.Sign-Up__table{
+.Sign-Up__table {
   margin-top: 30px;
 }
-.Sign-Up__table tr{
+.Sign-Up__table tr {
   display: block;
   margin-top: 15px;
 }
 
-.Sign-Up-btn{
+.Sign-Up-btn {
   margin-top: 25px;
   text-align: center;
 }
-.Sign-Up-btn button{
+.Sign-Up-btn button {
   width: 140px;
   height: 40px;
   background-color: #181818;
@@ -210,6 +209,32 @@ fieldset{
   cursor: pointer;
   font-weight: bold;
 }
-.Sign-Up-btn button:last-child{
-  background-color: #8C8C8C;
+.Sign-Up-btn button:last-child {
+  background-color: #8c8c8c;
+}
+
+// 상품상세 페이지
+.Detail-page {
+  text-align: center;
+  margin: 0 auto;
+  width: 400px;
+}
+.Detail-page__btn button {
+  margin-top: 10px;
+  background-color: #181818;
+  border: 0;
+  color: white;
+  font-size: 14px;
+  line-height: 35px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.detail-img {
+  width: 280px;
+  height: 175px;
+}
+// 장바구니 페이지
+.cart-img {
+  width: 280px;
+  height: 175px;
 }
