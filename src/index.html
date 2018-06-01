@@ -25,6 +25,10 @@
               <a href="#" class="login-page__btn">로그인</a>
             </li>
             <li>
+              <a href="#" class="post-list__logout-btn">로그아웃</a>
+            </li>
+
+            <li>
               <a href="#" class="signup-page__btn">회원가입</a>
             </li>
             <li>
@@ -180,56 +184,48 @@
       </header>
     </div>
     <div class="section section2 clearfix">
-      <table class="Sign-Up__table content">
-        <tbody>
-          <tr>
-            <th scope="row">아이디
-            </th>
-            <td>
-              <input id="member_id" name="member_id" class="id_input" placeholder="아이디" type="text">
-              <span id="idMsg"></span> (영문소문자/숫자, 4~16자)</td>
-          </tr>
-          <tr>
-            <th scope="row">비밀번호
-            </th>
-            <td>
-              <input id="passwd" name="passwd" maxlength="16" 0="disabled" placeholder="비밀번호" type="password"> (영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 8자~16자)</td>
-          </tr>
-          <tr>
-            <th scope="row">이름
-            </th>
-            <td>
-              <input id="name" name="name" class="name_input" placeholder="이름" type="text">
-          </tr>
-          <tr>
-            <th scope="row">주소
-            </th>
-            <td>
-              <input id="address" name="address" class="address_input" placeholder="주소" type="text"> -
-              <input id="address2" name="address2" class="address_input2" type="text"> 나머지주소 </td>
-          </tr>
-          <tr>
-            <th scope="row">휴대전화
-            </th>
-            <td>
-              <select id="mobile" name="mobile[]">
-                <option value="010">010</option>
-                <option value="011">011</option>
-                <option value="016">016</option>
-                <option value="017">017</option>
-                <option value="018">018</option>
-                <option value="019">019</option>
-              </select> -
-              <input id="mobile2" name="mobile[]" maxlength="4" type="text">-
-              <input id="mobile3" name="mobile[]" maxlength="4" type="text">
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="Sign-Up-btn">
-        <button type="submit">회원가입</button>
-        <button type="submit">회원가입 취소</button>
-      </div>
+      <form class="Sign_form">
+        <table class="Sign-Up__table content">
+          <tbody>
+            <tr>
+              <th scope="row">아이디
+              </th>
+              <td>
+                <input id="member_id" name="username" class="id_input" placeholder="아이디" type="text">
+                <span id="idMsg"></span> (영문소문자/숫자, 4~16자)</td>
+            </tr>
+            <tr>
+              <th scope="row">비밀번호
+              </th>
+              <td>
+                <input id="passwd" name="password" maxlength="16" 0="disabled" placeholder="비밀번호" type="password"> (영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 8자~16자)</td>
+            </tr>
+            <tr>
+              <th scope="row">이름
+              </th>
+              <td>
+                <input id="name" name="name" class="name_input" placeholder="이름" type="text">
+            </tr>
+            <tr>
+              <th scope="row">주소
+              </th>
+              <td>
+                <input id="address" name="address" class="address_input" placeholder="주소" type="text">
+            </tr>
+            <tr>
+              <th scope="row">휴대전화
+              </th>
+              <td>
+                <input id="mobile" name="mobile" class="mobile_input" placeholder="핸드폰번호" type="text">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="Sign-Up-btn">
+          <button type="submit">회원가입</button>
+          <button type="submit">회원가입 취소</button>
+        </div>
+      </form>
     </div>
   </template>
   <!-- 상품상세 페이지 -->
@@ -281,101 +277,106 @@
       <div class="Detail-list"></div>
     </div>
   </template>
+
   <!-- 상품 페이지 메인 -->
   <template id="Detail-more">
-    <div class="Detail-page content">
-      <!-- 수정완료 -->
-      <div class="infoArea">
-        <h2 class="Detail-title"></h2>
-      </div>
-      <div class="buy_dummy" style="height: 0px;"></div>
-      <div class="buy_wrap">
-        <div class="buy_scroll">
-          <!-- //상세정보 내역 -->
-          <!-- 상품옵션 -->
-          <table id="prdOptionTable" border="1" summary="">
-            <caption>상품 옵션</caption>
-            <tbody class="xans-element- xans-product xans-product-option xans-record-">
-              <tr class="xans-element- xans-product xans-product-option xans-record-">
-                <th scope="row">SIZE</th>
-                <td>
-                  <select option_product_no="3752" option_select_element="ec-option-select-finder" option_sort_no="1" option_type="T" item_listing_type="C"
-                    option_title="SIZE" product_option_area="product_option_3752_0" name="option1" id="product_option_id1"
-                    class="ProductOption0" option_style="select" required="true">
-                    <option value="*" link_image="">- [필수] *미국 사이즈가 아니라 일본 사이즈입니다. -</option>
-                    <option value="**" link_image="">-------------------</option>
-                    <optgroup label="SIZE">
-                      <option link_image="">S (85-90) [품절] </option>
-                      <option link_image="">M (90-95)</option>
-                      <option link_image="">L (95-100)</option>
-                      <option link_image="">XL (100-105)</option>
-                    </optgroup>
-                  </select>
-                  <p class="value"></p>
-                </td>
-              </tr>
-              <tr class="xans-element- xans-product xans-product-option xans-record-">
-                <th scope="row">COLOR</th>
-                <td>
-                  <div id="prdRelated" class="xans-element- xans-product xans-product-relation xans-record-">
-                    <div class="relation">
-                      <div class="xans-element- xans-product xans-product-relationlist">
-                        <ul class="prdList">
-                          <li class="item xans-record-">
-                            <div class="box">
-                              <img src="#" class="Detail__img" alt="">
-                            </div>
-                          </li>
-                        </ul>
+    <form class="Detail-form">
+      <div class="Detail-page content">
+        <!-- 수정완료 -->
+        <div class="infoArea">
+          <h2 class="Detail-title"></h2>
+        </div>
+        <div class="buy_dummy" style="height: 0px;"></div>
+        <div class="buy_wrap">
+          <div class="buy_scroll">
+            <!-- //상세정보 내역 -->
+            <!-- 상품옵션 -->
+            <table id="prdOptionTable" border="1" summary="">
+              <caption>상품 옵션</caption>
+              <tbody class="xans-element- xans-product xans-product-option xans-record-">
+                <tr class="xans-element- xans-product xans-product-option xans-record-">
+                  <th scope="row">SIZE</th>
+                  <td>
+                    <select option_product_no="3752" option_select_element="ec-option-select-finder" option_sort_no="1" option_type="T" item_listing_type="C"
+                      option_title="SIZE" product_option_area="product_option_3752_0" name="option1" id="product_option_id1"
+                      class="ProductOption0" option_style="select" required="true">
+                      <option value="*" link_image="">- [필수] *미국 사이즈가 아니라 일본 사이즈입니다. -</option>
+                      <option value="**" link_image="">-------------------</option>
+                      <optgroup label="SIZE">
+                        <option link_image="">S (85-90) [품절] </option>
+                        <option link_image="">M (90-95)</option>
+                        <option link_image="">L (95-100)</option>
+                        <option link_image="">XL (100-105)</option>
+                      </optgroup>
+                    </select>
+                    <p class="value"></p>
+                  </td>
+                </tr>
+                <tr class="xans-element- xans-product xans-product-option xans-record-">
+                  <th scope="row">COLOR</th>
+                  <td>
+                    <div id="prdRelated" class="xans-element- xans-product xans-product-relation xans-record-">
+                      <div class="relation">
+                        <div class="xans-element- xans-product xans-product-relationlist">
+                          <ul class="prdList">
+                            <li class="item xans-record-">
+                              <div class="box">
+                                <img src="#" class="Detail__img" alt="">
+                                <p class="Detail-text"></p>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <div id="totalProducts" class="">
-            <table border="1" summary="">
-              <caption>상품 목록</caption>
-              <colgroup>
-                <col style="width:500px;">
-                <col style="width:50px;">
-                <col style="width:10px;">
-              </colgroup>
-              <thead>
-                <tr>
-                  <th scope="col">상품명</th>
-                  <th scope="col">상품수</th>
-                  <th scope="col">가격</th>
-                </tr>
-              </thead>
-              <tbody class="displaynone">
-                <tr>
-                  <td class="Detail-title"></td>
-                  <td>
-                    <span class="quantity">
-                      <input id="quantity" name="quantity_name" value="0" type="text">
-                      <a href="#">
-                        <img src="../img/btn_count_up.gif" alt="수량증가" class="QuantityUp up">
-                      </a>
-                      <a href="#">
-                        <img src="../img/btn_count_down.gif" alt="수량감소" class="QuantityDown down">
-                      </a>
-                    </span>
-                  </td>
-                  <td class="right">
-                    <span class="Detail-price">32000</span>
                   </td>
                 </tr>
               </tbody>
             </table>
+            <div id="totalProducts" class="">
+              <table border="1" summary="">
+                  <img src="#" class="Detail__imgsize" alt="">
+                <caption>상품 목록</caption>
+                <colgroup>
+                  <col style="width:500px;">
+                  <col style="width:50px;">
+                  <col style="width:10px;">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="col">상품명</th>
+                    <th scope="col">상품수</th>
+                    <th scope="col">가격</th>
+                  </tr>
+                </thead>
+                <tbody class="displaynone">
+                  <tr>
+                    <td class="Detail-title_title"></td>
+                    <td>
+                      <span class="quantity">
+                        <input id="quantity" name="quantity_name" value="0" type="text">
+                        <a href="#">
+                          <img src="../img/btn_count_up.gif" alt="수량증가" class="QuantityUp up">
+                        </a>
+                        <a href="#">
+                          <img src="../img/btn_count_down.gif" alt="수량감소" class="QuantityDown down">
+                        </a>
+                      </span>
+                    </td>
+                    <td class="right">
+                      <span class="Detail-price"></span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
+        <div class="Detail-page__btn">
+          <button type="submit">CART</button>
+        </div>
       </div>
-      <div class="Detail-page__btn">
-        <button type="submit">CART</button>
-      </div>
-    </div>
+    </form>
   </template>
   <!-- 장바구니 페이지 -->
   <template id="cart-page">
@@ -424,108 +425,111 @@
     </div>
 
     <div class="section section2 clearfix">
-      <div class="orderListArea ec-base-table typeList gBorder">
-        <div class="xans-element- xans-order xans-order-normtitle title ">
-          <h3>일반상품 (1)</h3>
-        </div>
-
-        <!-- 일반상품 (기본배송) -->
-        <table border="1" summary="" class="xans-element- xans-order xans-order-normnormal xans-record-">
-          <caption>기본배송</caption>
-          <colgroup>
-            <col style="width:27px">
-            <col style="width:92px">
-            <col style="width:auto">
-            <col style="width:98px">
-            <col style="width:75px">
-            <col style="width:98px">
-            <col style="width:98px">
-            <col style="width:85px">
-            <col style="width:98px">
-            <col style="width:110px">
-          </colgroup>
-          <thead>
-            <tr>
-              <th scope="col">
-                <input type="checkbox">
-              </th>
-              <th scope="col">이미지</th>
-              <th scope="col">상품정보</th>
-              <th scope="col">판매가</th>
-              <th scope="col">수량</th>
-              <th scope="col">배송구분</th>
-              <th scope="col">배송비</th>
-              <th scope="col">합계</th>
-              <th scope="col">선택</th>
-            </tr>
-          </thead>
-
-          <tbody class="xans-element- xans-order xans-order-list center">
-            <tr class="xans-record-">
-              <td>
-                <input type="checkbox" id="basket_chk_id_0" name="basket_product_normal_type_normal">
-              </td>
-              <td class="thumb gClearLine">
-                <a href="#">
-                  <img src="https://source.unsplash.com/random/500x500" class="cart-img" alt=""> alt="Basic T-shirt - Black (C3-H359K)">
-                </a>
-              </td>
-              <td class="left gClearLine">
-                <ul class="xans-element- xans-order xans-order-optionall option">
-                  <li class="xans-record-">
-                    <strong class="displaynone">Basic T-shirt - Black (C3-H359K)</strong>[옵션: M (90-95)]
-                    <span class="displaynone">(1개)</span>
-                    <br>
-                  </li>
-                </ul>
-              </td>
-              <td class="right">
-                <div class="">
-                  <strong>₩32,000</strong>
-                </div>
-              </td>
-              <td>
-                <span class="">
-                  <span class="ec-base-qty">
-                    <input id="quantity_id_0" name="quantity_name_0" size="2" value="1" type="text">
-                    <a href="#">
-                      <img src="../img//btn_count_up.gif" alt="수량증가" class="up">
-                    </a>
-                    <a href="#">
-                      <img src="../img//btn_count_down.gif" alt="수량감소" class="down">
-                    </a>
-                  </span>
-                </span>
-              </td>
-
-              <td>
-                <div class="txtInfo">기본배송
-                  <br>
-                </div>
-              </td>
-              <td rowspan="1" class="">
-                <p class="displaynone">
-                </p>무료</td>
-              <td class="right">
-                <strong>₩32,000</strong>
-
-              </td>
-              <td class="button">
-                <a href="#">
-                  <img src="../img//btn_order.gif" alt="주문하기">
-                </a>
-                <a href="#">
-                  <img src="../img//btn_wish.gif" alt="관심상품등록">
-                </a>
-                <a href="#">
-                  <img src="../img/btn_delete.gif" alt="삭제">
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+        <div class="cart-list"></div>
     </div>
+  </template>
+  <template id="cart-list">
+      <div class="orderListArea ec-base-table typeList gBorder">
+          <div class="xans-element- xans-order xans-order-normtitle title ">
+            <h3>일반상품 (1)</h3>
+          </div>
+
+          <!-- 일반상품 (기본배송) -->
+          <table border="1" summary="" class="xans-element- xans-order xans-order-normnormal xans-record-">
+            <caption>기본배송</caption>
+            <colgroup>
+              <col style="width:27px">
+              <col style="width:92px">
+              <col style="width:auto">
+              <col style="width:98px">
+              <col style="width:75px">
+              <col style="width:98px">
+              <col style="width:98px">
+              <col style="width:85px">
+              <col style="width:98px">
+              <col style="width:110px">
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">
+                  <input type="checkbox">
+                </th>
+                <th scope="col">이미지</th>
+                <th scope="col">상품정보</th>
+                <th scope="col">판매가</th>
+                <th scope="col">수량</th>
+                <th scope="col">배송구분</th>
+                <th scope="col">배송비</th>
+                <th scope="col">합계</th>
+                <th scope="col">선택</th>
+              </tr>
+            </thead>
+
+            <tbody class="xans-element- xans-order xans-order-list center">
+              <tr class="xans-record-">
+                <td>
+                  <input type="checkbox" id="basket_chk_id_0" name="basket_product_normal_type_normal">
+                </td>
+                <td class="thumb gClearLine">
+                  <a href="#">
+                    <img src="#" class="cart-img" alt="">
+                  </a>
+                </td>
+                <td class="left gClearLine">
+                  <ul class="xans-element- xans-order xans-order-optionall option">
+                    <li class="xans-record-">
+                      <strong class="cart-title">Basic T-shirt - Black (C3-H359K)</strong>[옵션: M (90-95)]
+                      <span class="displaynone">(1개)</span>
+                      <br>
+                    </li>
+                  </ul>
+                </td>
+                <td class="right">
+                  <div class="">
+                    <strong class="cart-price"></strong>
+                  </div>
+                </td>
+                <td>
+                  <span class="">
+                    <span class="ec-base-qty">
+                      <input id="quantity_id_0" name="quantity_name_0" size="2" value="1" type="text">
+                      <a href="#">
+                        <img src="../img//btn_count_up.gif" alt="수량증가" class="up">
+                      </a>
+                      <a href="#">
+                        <img src="../img//btn_count_down.gif" alt="수량감소" class="down">
+                      </a>
+                    </span>
+                  </span>
+                </td>
+
+                <td>
+                  <div class="txtInfo">기본배송
+                    <br>
+                  </div>
+                </td>
+                <td rowspan="1" class="">
+                  <p class="displaynone">
+                  </p>무료</td>
+                <td class="right">
+                  <strong class="cart-price_total"></strong>
+
+                </td>
+                <td class="button">
+                  <a href="#">
+                    <img src="../img//btn_order.gif" alt="주문하기">
+                  </a>
+                  <a href="#">
+                    <img src="../img//btn_wish.gif" alt="관심상품등록">
+                  </a>
+                  <a href="#">
+                    <img src="../img/btn_delete.gif" alt="삭제">
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
   </template>
   <script src="./index.js"></script>
 </body>

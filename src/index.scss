@@ -111,7 +111,7 @@ fieldset {
   box-shadow: 0 7px 9px rgba(0, 0, 0, 0.1);
 }
 .card-box img {
-  width: 345px;
+  width: 265px;
   height: 245px;
 }
 .card-box-text {
@@ -184,6 +184,15 @@ fieldset {
   line-height: 35px;
   cursor: pointer;
 }
+.root--authed .login-page__btn {
+  display: none;
+}
+.post-list__logout-btn {
+  display: none;
+}
+.root--authed .post-list__logout-btn {
+  display: inline-block;
+}
 
 // 회원가입 페이지
 .Sign-Up__table {
@@ -232,6 +241,10 @@ fieldset {
 .detail-img {
   width: 280px;
   height: 175px;
+}
+.Detail__imgsize{
+  width: 400px;
+  height: 376px;
 }
 // 장바구니 페이지
 .cart-img {

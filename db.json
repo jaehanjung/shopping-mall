@@ -6,14 +6,44 @@
       "name": "관리자",
       "address": "서울특별시 송파구",
       "phone": "010-0000-0000",
-      "hashedPassword": "$2a$10$0W07GY4Tp3hi/PKnCGuVbOeGswyB143DPzkD9PaD5ociT4taJ0oNC"
+      "hashedPassword": "$2a$10$VYG8Ovi47Wb.sllmFEoh9Oy6pCQxtUp2JkJiB9Ef8yIU7S4tXJStS"
     },
     {
       "id": 2,
       "username": "jaehan",
       "name": "정재한",
       "address": "경기도 광주시",
-      "phone": "010-0000-0000"
+      "phone": "010-0000-0000",
+      "hashedPassword": "$2a$10$.0sjLjUknxNl9VDEf99DZeeRAlGeSA3LPyLnrJZfgkeHLd5W8Fh32"
+    },
+    {
+      "username": "aaaaa",
+      "password": "asdf",
+      "name": "정재한",
+      "address": "경기도성남시",
+      "mobile": "010-4830-3455",
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "username": "seungha",
+      "hashedPassword": "$2a$10$LsY1kvyDsauUlTHV59J00OHG0r5gcyBdCr0iBaaUHfbP/F8jPPsFO",
+      "id": 4
+    },
+    {
+      "username": "hahaha",
+      "hashedPassword": "$2a$10$bAj7eoJ186RARZhlb19g.uHA2kd949X3dDVrQyKM6/iLkNQdDCZUG",
+      "id": 5
+    },
+    {
+      "username": "mememe",
+      "hashedPassword": "$2a$10$CFVIzNFCT5aCmyhErxAdpex3rqTp1rYEhcpWiiPeRlt7EOO0GtvnG",
+      "id": 6
+    },
+    {
+      "username": "hehehe",
+      "hashedPassword": "$2a$10$ArsBaMjQRVTLOokEEp6lyeNCzKtYVmwc2gSLzPP5xIgAw3Na/7wuS",
+      "id": 7
     }
   ],
   "products": [
@@ -22,23 +52,26 @@
       "product": "Basic Logo T-shirt - White",
       "price": "₩68,000",
       "imgURL": "https://cdn.glitch.com/2e32fe9f-44cd-40af-8923-22c5ecf56d8f%2F2342_shop1_946311.jpg?1527582907408",
-      "content": "티셔츠입니다.",
+      "imgsize": "https://cdn.glitch.com/2e32fe9f-44cd-40af-8923-22c5ecf56d8f%2FC5-P301S_shop1_095405.jpg?1527837879718",
+      "content": "Champion(챔피온)은 1919년에 설립된 이후로 높은 퀄리티의 후디 및 메쉬 재질의 제품들을 생산함으로써 미국, 유럽, 일본 등 세계적으로 꾸준히 인기를 얻고 있는 스포츠 의류 브랜드입니다. ",
       "quantity": 2
     },
     {
       "id": 2,
-      "product": "Basic Polo shirt - White",
+      "product": "Basic Polo shirt - black",
       "price": "₩48,000",
       "imgURL": "https://cdn.glitch.com/2e32fe9f-44cd-40af-8923-22c5ecf56d8f%2F3752_shop1_891169.jpg?1527582907119",
-      "content": "셔츠입니다.",
+      "imgsize": "https://cdn.glitch.com/2e32fe9f-44cd-40af-8923-22c5ecf56d8f%2FC5-P301S_shop1_095405.jpg?1527837879718",
+      "content": "Champion(챔피온)은 1919년에 설립된 이후로 높은 퀄리티의 후디 및 메쉬 재질의 제품들을 생산함으로써 미국, 유럽, 일본 등 세계적으로 꾸준히 인기를 얻고 있는 스포츠 의류 브랜드입니다.",
       "quantity": 5
     },
     {
       "id": 3,
-      "product": "Ripstop Print Cap - Black",
+      "product": "Ripstop Print Cap - white",
       "price": "₩38,000",
       "imgURL": "https://cdn.glitch.com/2e32fe9f-44cd-40af-8923-22c5ecf56d8f%2F3485_shop1_222606.jpg?1527582906885",
-      "content": "모자입니다.",
+      "imgsize": "",
+      "content": "Champion(챔피온)은 1919년에 설립된 이후로 높은 퀄리티의 후디 및 메쉬 재질의 제품들을 생산함으로써 미국, 유럽, 일본 등 세계적으로 꾸준히 인기를 얻고 있는 스포츠 의류 브랜드입니다.",
       "quantity": 2
     },
     {
@@ -46,7 +79,8 @@
       "product": "Basic Short pants - Off White",
       "price": "₩68,000",
       "imgURL": "https://cdn.glitch.com/2e32fe9f-44cd-40af-8923-22c5ecf56d8f%2F3926_shop1_572041.jpg?1527582907318",
-      "content": "바지입니다.",
+      "imgsize": "https://cdn.glitch.com/2e32fe9f-44cd-40af-8923-22c5ecf56d8f%2Fcw-k505-s_shop1_170057.jpg?1527838434776",
+      "content": "Champion(챔피온)은 1919년에 설립된 이후로 높은 퀄리티의 후디 및 메쉬 재질의 제품들을 생산함으로써 미국, 유럽, 일본 등 세계적으로 꾸준히 인기를 얻고 있는 스포츠 의류 브랜드입니다.",
       "quantity": 2
     },
     {
@@ -54,7 +88,8 @@
       "product": "Ripstop Print Cap - White",
       "price": "₩88,000",
       "imgURL": "https://cdn.glitch.com/2e32fe9f-44cd-40af-8923-22c5ecf56d8f%2F4048_shop1_15270525816289.jpg?1527582907528",
-      "content": "바지입니다.",
+      "imgsize": "",
+      "content": "Champion(챔피온)은 1919년에 설립된 이후로 높은 퀄리티의 후디 및 메쉬 재질의 제품들을 생산함으로써 미국, 유럽, 일본 등 세계적으로 꾸준히 인기를 얻고 있는 스포츠 의류 브랜드입니다.",
       "quantity": 2
     },
     {
@@ -62,15 +97,17 @@
       "product": "CANVAS SHOULDER BAG - Black",
       "price": "₩18,000",
       "imgURL": "https://cdn.glitch.com/2e32fe9f-44cd-40af-8923-22c5ecf56d8f%2F3925_shop1_384180.jpg?1527582907869",
-      "content": "가방입니다.",
+      "imgsize": "",
+      "content": "Champion(챔피온)은 1919년에 설립된 이후로 높은 퀄리티의 후디 및 메쉬 재질의 제품들을 생산함으로써 미국, 유럽, 일본 등 세계적으로 꾸준히 인기를 얻고 있는 스포츠 의류 브랜드입니다.",
       "quantity": 2
     },
     {
       "id": 7,
-      "product": "Twill 6P Cap - White",
+      "product": "Twill 6P Cap -",
       "price": "₩78,000",
       "imgURL": "https://cdn.glitch.com/2e32fe9f-44cd-40af-8923-22c5ecf56d8f%2F4047_shop1_1527052504171.jpg?1527582907241",
-      "content": "모자입니다.",
+      "imgsize": "https://cdn.glitch.com/2e32fe9f-44cd-40af-8923-22c5ecf56d8f%2FC5-P301S_shop1_095405.jpg?1527837879718",
+      "content": "Champion(챔피온)은 1919년에 설립된 이후로 높은 퀄리티의 후디 및 메쉬 재질의 제품들을 생산함으로써 미국, 유럽, 일본 등 세계적으로 꾸준히 인기를 얻고 있는 스포츠 의류 브랜드입니다.",
       "quantity": 2
     },
     {
@@ -78,7 +115,8 @@
       "product": "Women's Short Pants - Oxford gray (CW-K505)",
       "price": "₩38,000",
       "imgURL": "https://cdn.glitch.com/2e32fe9f-44cd-40af-8923-22c5ecf56d8f%2F3988_shop1_15272117585449.jpg?1527582907031",
-      "content": "모자입니다.",
+      "imgsize": "https://cdn.glitch.com/2e32fe9f-44cd-40af-8923-22c5ecf56d8f%2Fcw-k505-s_shop1_170057.jpg?1527838434776",
+      "content": "Champion(챔피온)은 1919년에 설립된 이후로 높은 퀄리티의 후디 및 메쉬 재질의 제품들을 생산함으로써 미국, 유럽, 일본 등 세계적으로 꾸준히 인기를 얻고 있는 스포츠 의류 브랜드입니다.",
       "quantity": 2
     }
   ],
@@ -92,6 +130,20 @@
       "id": 2,
       "userId": 1,
       "productId": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "productId": 3,
+      "userId": 1,
+      "id": 6
     }
   ]
 }
