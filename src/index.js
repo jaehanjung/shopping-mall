@@ -132,13 +132,19 @@ async function DetailPage(id) {
   });
   const fragment = document.importNode(templates.detailMore, true);
   const formEl = fragment.querySelector(".Detail-form");
-
+  fragment.querySelector(".QuantityUp").addEventListener("click", e=>{
+    document.querySelector("#quantity").value++
+  })
+  fragment.querySelector(".QuantityDown").addEventListener("click", e=>{
+    document.querySelector("#quantity").value--
+  })
   formEl.addEventListener("submit", async e => {
     e.preventDefault();
     // e.target.elements.username === fragment.querySelector('.login__username');
     const payload = {
       productId: id
     };
+
     e.preventDefault();
     const res = await postAPI.post("/carts", payload);
     cartPage();
@@ -177,6 +183,12 @@ async function cartPage() {
     itemEL.setAttribute("src", cart.product.imgURL);
     const totalEl = fragment.querySelector(".cart-price_total");
     totalEl.textContent = cart.product.price;
+    const deleteEl = fragment.querySelector(".cart-delete");
+    deleteEl.addEventListener("click", async e=>{
+      e.preventDefault();
+       // delete 요청 보내기
+      //  const res = await postAPI.delete(`${id}`);
+    })
     listFragment.querySelector(".cart-list").appendChild(fragment);
   });
   render(listFragment);
