@@ -4,7 +4,8 @@
   "description": "패스트캠퍼스 프론트엔드 개발 스쿨 중간 프로젝트 템플릿",
   "scripts": {
     "start": "parcel src/index.html --open",
-    "build": "rimraf dist && parcel build src/index.html"
+    "build": "rimraf dist && parcel build src/index.html",
+    "server": "fds-json-server db.json"
   },
   "keywords": [],
   "author": "",
