@@ -186,8 +186,12 @@ async function cartPage() {
     const deleteEl = fragment.querySelector(".cart-delete");
     deleteEl.addEventListener("click", async e=>{
       e.preventDefault();
-       // delete 요청 보내기
-      //  const res = await postAPI.delete(`${id}`);
+      // const payload = {
+      //   productId: id
+      // };
+      // e.preventDefault();
+      //  // delete 요청 보내기
+      //  const res = await postAPI.delete("/carts", payload);
     })
     listFragment.querySelector(".cart-list").appendChild(fragment);
   });

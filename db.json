@@ -5,7 +5,8 @@
       "username": "admin",
       "name": "관리자",
       "address": "서울특별시 송파구",
-      "phone": "010-0000-0000"
+      "phone": "010-0000-0000",
+      "hashedPassword": "$2a$10$OdZQuWGaIUwgS.3ZAIZP8ul69exkXOIPalrdeyQlQlbqQnKfADWUW"
     },
     {
       "id": 2,
